@@ -1,0 +1,7 @@
+python-dotenv
+pyfiglet
+rich
+pyaudio
+SpeechRecognition
+pyttsx3
+google-genai
