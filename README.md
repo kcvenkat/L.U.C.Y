@@ -5,7 +5,7 @@ L.U.C.Y (Literally Understands Commands and Yaps) is a lightweight, always-liste
 Built with Python, L.U.C.Y continuously runs in the background and responds instantly to your voice. Whether you're coding, multitasking, or simply away from the keyboard, you can speak a command or ask a question and get immediate results without ever touching a button. With built-in voice recognition powered by Google Speech API, offline text-to-speech, and a flexible command execution system, L.U.C.Y becomes a natural extension of your workflow.
 
 ## Why use L.U.C.Y?
-When I’m working, I like to open something like ChatGPT and ask it a question in order to clarify a doubt I have. My goal with L.U.C.Y was to have a lightweight program that could continuously run in the background so I could speak my question aloud and it could give me a response back. This way, all I need to do for a question is ask, and it will be answered. There’s no need to run anything or press a button, and it’s always in the background simply waiting.
+When I’m working, I like to open an AI tool and ask it a question in order to clarify a doubt I have. My goal with L.U.C.Y was to have a lightweight program that could continuously run in the background so I could speak my question aloud and it could give me a response back. This way, all I need to do for a question is ask, and it will be answered. There’s no need to run anything or press a button, and it’s always in the background simply waiting.
 
 ## Features
 - Modular architecture, making it easy to add new functions
