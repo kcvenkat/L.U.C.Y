@@ -19,7 +19,7 @@ L.U.C.Y runs on a modular architecture where each of her functions lives in a se
 - ai.py: This hosts the AI class. The initializer function hardcodes values like the API key and the configuration of the LLM. It also has the process() function that makes the call to the client and returns the response.
 - speech.py: This hosts the Speech class. This module has an initializer function that creates instances of the Speech Recognition library for voice recognition and the pyttsx3 library for text-to-speech. The capture() function captures whatever the user is saying, and the speak() function converts the LLM’s response text into speech.
 
-These are the core modules because without them, L.U.C.Y wouldn’t be able to talk. Any other module is a new feature. The current features of L.U.C.Y are:
+These are the core modules because without them, L.U.C.Y wouldn’t be able to reason, execute processes, or talk. Any other module is a new feature. The current features of L.U.C.Y are:
 - commands.py: This hosts the Commands class. The do_command() function from this module allows L.U.C.Y to read, write, create, delete, and run Python files. This is done by prompting the LLM to return a very specifically formatted string whenever the user asks for an operation, parse that string, and perform actions accordingly.
 
 Note that for proper functionality, it is necessary to rewrite the system prompt in the ai.py page. The current prompt that L.U.C.Y has is designed to either return a string formatted for file operations or respond conversationally. This may not be optimal for all customizations and the prompt will need to be engineered accordingly.
@@ -36,7 +36,7 @@ L.U.C.Y requires the following system and environmental components.
 - All required Python libraries are listed in requirements.txt
   
 #### External Services
-- Google Cloud Speech-to-Text API key
+- Google Gemini API key
 - A configured service account JSON file for authentication
 - Active internet connection for speech recognition requests
 
@@ -68,7 +68,7 @@ L.U.C.Y requires the following system and environmental components.
 pip3 install -r requirements.txt
 ```
 
-3. Place your Google Cloud Speech API Key somewhere accessible, like an environment variable. You can set the environment variable by running this in your terminal: 
+3. Place your Google Gemini API Key somewhere accessible, like an environment variable. You can set the environment variable by running this in your terminal or by putting it in a .env file: 
 ```
 export GEMINI_API_KEY="key-here" 
 ```
